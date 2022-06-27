@@ -10,8 +10,8 @@ pipeline {
             steps {
                 echo 'Running build automation'
                 
-                bat "micro-gw init"
-                bat "micro-gw build BalanceInquiry --deployment-config /BalanceInquiry/conf/deployment-config.toml"
+//                 bat "micro-gw init"
+                bat "micro-gw build  --deployment-config conf/deployment-config.toml"
 //                 BalanceInquiry --deployment-config /BalanceInquiry/conf/deployment-config.toml
 //               micro-gw build BalanceInquiry --docker --docker-image BalanceInquiry:v1 --docker-base-image wso2/wso2micro-gw:3.2.0
 //                 micro-gw build BalanceInquiry --deployment-config /BalanceInquiry/conf/deployment-config.toml
